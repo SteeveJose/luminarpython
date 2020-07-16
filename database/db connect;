@@ -1,0 +1,9 @@
+python to my sql
+
+1.py language to sql query
+2.package installation
+3.establish connection
+4.create cursor object
+            data transportation from py to sql and opposite
+5.execute mysql query
+6.close db
