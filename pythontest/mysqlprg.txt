@@ -1,0 +1,19 @@
+*load csv file into console******
+
+LOAD DATA  INFILE 'C:\\ProgramData\\MySQL\\MySQL Server 8.0\\Uploads\\employeedata.csv' 
+INTO TABLE employee 
+
+FIELDS TERMINATED BY ',' 
+
+ENCLOSED BY '"'
+
+LINES TERMINATED BY '\n';
+
+*table creation********
+
+create table employee(eid varchar(20),ename varchar(50),edesig varchar(50),email varchar(30),salary int(20));
+
+*desig  order******
+
+select  edesig,count(edesig) as total from employee
+group by edesig
